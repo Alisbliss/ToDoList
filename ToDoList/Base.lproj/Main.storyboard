@@ -244,7 +244,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h6w-y6-Mtp"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.89803208104822019" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pRh-0T-Oc6" firstAttribute="centerY" secondItem="IeI-2p-jTC" secondAttribute="centerY" id="1Wm-9p-uV6"/>
                             <constraint firstItem="h6w-y6-Mtp" firstAttribute="trailing" secondItem="pRh-0T-Oc6" secondAttribute="trailing" constant="15" id="5xS-Sx-Rxe"/>
@@ -254,6 +254,7 @@
                     <connections>
                         <outlet property="appThemeLabel" destination="deT-Di-fsa" id="WxS-Yv-4aL"/>
                         <outlet property="modalView" destination="pRh-0T-Oc6" id="GV4-Pf-L34"/>
+                        <outlet property="segmentedControl" destination="DCG-WS-xw9" id="eOw-Gd-Qx7"/>
                         <outlet property="settingsTitleLabel" destination="U0g-kB-kA0" id="BS8-Hb-MtI"/>
                     </connections>
                 </viewController>
