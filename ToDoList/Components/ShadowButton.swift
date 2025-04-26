@@ -29,13 +29,23 @@ class ShadowButton: UIButton {
         }
     }
     
-    override func prepareForInterfaceBuilder() {
+    func setup() {
         titleLabel?.font = UIFont.style(.buttonTitle)
         backgroundColor = background
         layer.shadowColor = shadowColor.cgColor
         layer.masksToBounds = false
         layer.shadowOpacity = 1.0
         layer.shadowRadius = 0
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setup()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        setup()
     }
     
     override func didMoveToSuperview() {
