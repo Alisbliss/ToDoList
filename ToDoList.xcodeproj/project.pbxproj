@@ -83,6 +83,46 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		F832144E2DBE759D00A339AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F838C4DE2DA04AF4004B68D6 /* TaskModel.swift */,
+				F838C4DC2D9EBE06004B68D6 /* CatagoryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F832144F2DBE75DC00A339AD /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				F838C5052DA5CDF0004B68D6 /* Font */,
+				F838C5182DA6F90F004B68D6 /* Exstension+Color.swift */,
+				F838C5032DA5CDD8004B68D6 /* Typografy.swift */,
+				F838C5162DA6901B004B68D6 /* Colors.xcassets */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		F83214502DBE778E00A339AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F838C4D42D8C533A004B68D6 /* TaskTableViewCell.swift */,
+				F838C4DA2D935FA4004B68D6 /* NewTaskModalView.swift */,
+				F838C4D82D933DC1004B68D6 /* NewTaskModalView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F83214512DBE77FD00A339AD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F838C4C12D8C3572004B68D6 /* ViewController.swift */,
+				F838C56C2DAD471D004B68D6 /* SettingsViewController.swift */,
+				F838C4D62D93220F004B68D6 /* NewTaskViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		F838C4B12D8C3572004B68D6 = {
 			isa = PBXGroup;
 			children = (
@@ -102,23 +142,15 @@
 		F838C4BC2D8C3572004B68D6 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				F838C5052DA5CDF0004B68D6 /* Font */,
+				F83214512DBE77FD00A339AD /* ViewControllers */,
+				F83214502DBE778E00A339AD /* Views */,
+				F832144E2DBE759D00A339AD /* Models */,
+				F832144F2DBE75DC00A339AD /* Design */,
 				F832144B2DBA808200A339AD /* Components */,
 				F838C4BD2D8C3572004B68D6 /* AppDelegate.swift */,
 				F838C4BF2D8C3572004B68D6 /* SceneDelegate.swift */,
-				F838C4DC2D9EBE06004B68D6 /* CatagoryModel.swift */,
-				F838C5182DA6F90F004B68D6 /* Exstension+Color.swift */,
-				F838C4DE2DA04AF4004B68D6 /* TaskModel.swift */,
-				F838C4C12D8C3572004B68D6 /* ViewController.swift */,
-				F838C56C2DAD471D004B68D6 /* SettingsViewController.swift */,
-				F838C5032DA5CDD8004B68D6 /* Typografy.swift */,
-				F838C4D62D93220F004B68D6 /* NewTaskViewController.swift */,
-				F838C4D42D8C533A004B68D6 /* TaskTableViewCell.swift */,
 				F838C4C32D8C3572004B68D6 /* Main.storyboard */,
-				F838C5162DA6901B004B68D6 /* Colors.xcassets */,
 				F838C4CB2D8C3577004B68D6 /* LaunchScreen.storyboard */,
-				F838C4D82D933DC1004B68D6 /* NewTaskModalView.xib */,
-				F838C4DA2D935FA4004B68D6 /* NewTaskModalView.swift */,
 				F838C4C92D8C3577004B68D6 /* Assets.xcassets */,
 				F838C4CE2D8C3577004B68D6 /* Info.plist */,
 				F838C4C62D8C3572004B68D6 /* ToDoList.xcdatamodeld */,
