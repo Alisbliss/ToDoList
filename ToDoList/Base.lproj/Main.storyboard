@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="gearshape.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="settingsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DUx-6y-9kZ"/>
+                                            <action selector="settingsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IX2-zd-YLH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -171,8 +171,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="4rA-mo-gjH" id="xv8-dX-Jrp"/>
-                        <outlet property="titleView" destination="645-FZ-3XU" id="TBD-tD-3Q7"/>
+                        <outlet property="tableView" destination="4rA-mo-gjH" id="4nP-Qg-s2t"/>
+                        <outlet property="titleView" destination="645-FZ-3XU" id="iU9-sb-ft5"/>
                         <segue destination="Ygk-ja-Nvh" kind="presentation" identifier="SettingsSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="uAl-GH-fQP"/>
                     </connections>
                 </viewController>

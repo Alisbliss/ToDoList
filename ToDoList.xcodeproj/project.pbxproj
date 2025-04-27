@@ -10,9 +10,13 @@
 		F83214462DBA6C9A00A339AD /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83214452DBA6C9A00A339AD /* RoundedButton.swift */; };
 		F83214482DBA772600A339AD /* PilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83214472DBA772600A339AD /* PilledButton.swift */; };
 		F832144A2DBA77F900A339AD /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83214492DBA77F900A339AD /* ShadowButton.swift */; };
+		F83214532DBE7E9300A339AD /* Assistant-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83214522DBE7E9300A339AD /* Assistant-Bold.ttf */; };
+		F83214552DBE7EBC00A339AD /* Assistant-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83214542DBE7EBC00A339AD /* Assistant-Regular.ttf */; };
+		F83214572DBE7ECE00A339AD /* Assistant-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83214562DBE7ECE00A339AD /* Assistant-SemiBold.ttf */; };
+		F83214592DBE7EE100A339AD /* Assistant-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83214582DBE7EE100A339AD /* Assistant-Medium.ttf */; };
 		F838C4BE2D8C3572004B68D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C4BD2D8C3572004B68D6 /* AppDelegate.swift */; };
 		F838C4C02D8C3572004B68D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C4BF2D8C3572004B68D6 /* SceneDelegate.swift */; };
-		F838C4C22D8C3572004B68D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C4C12D8C3572004B68D6 /* ViewController.swift */; };
+		F838C4C22D8C3572004B68D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C4C12D8C3572004B68D6 /* HomeViewController.swift */; };
 		F838C4C52D8C3572004B68D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F838C4C32D8C3572004B68D6 /* Main.storyboard */; };
 		F838C4C82D8C3572004B68D6 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F838C4C62D8C3572004B68D6 /* ToDoList.xcdatamodeld */; };
 		F838C4CA2D8C3577004B68D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F838C4C92D8C3577004B68D6 /* Assets.xcassets */; };
@@ -27,20 +31,20 @@
 		F838C5172DA6901B004B68D6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F838C5162DA6901B004B68D6 /* Colors.xcassets */; };
 		F838C5192DA6F90F004B68D6 /* Exstension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C5182DA6F90F004B68D6 /* Exstension+Color.swift */; };
 		F838C56D2DAD471D004B68D6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C56C2DAD471D004B68D6 /* SettingsViewController.swift */; };
-		F838C5792DAD4E70004B68D6 /* Assistant-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F838C5782DAD4E70004B68D6 /* Assistant-Bold.ttf */; };
-		F838C57B2DAD4E79004B68D6 /* Assistant-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F838C57A2DAD4E79004B68D6 /* Assistant-Medium.ttf */; };
-		F838C57D2DAD4E81004B68D6 /* Assistant-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F838C57C2DAD4E81004B68D6 /* Assistant-Regular.ttf */; };
-		F838C57F2DAD4E8B004B68D6 /* Assistant-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F838C57E2DAD4E8B004B68D6 /* Assistant-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F83214452DBA6C9A00A339AD /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		F83214472DBA772600A339AD /* PilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilledButton.swift; sourceTree = "<group>"; };
 		F83214492DBA77F900A339AD /* ShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
+		F83214522DBE7E9300A339AD /* Assistant-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Assistant-Bold.ttf"; path = "../../../../../../Downloads/Assistant/static/Assistant-Bold.ttf"; sourceTree = "<group>"; };
+		F83214542DBE7EBC00A339AD /* Assistant-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Assistant-Regular.ttf"; path = "../../../../../../Downloads/Assistant/static/Assistant-Regular.ttf"; sourceTree = "<group>"; };
+		F83214562DBE7ECE00A339AD /* Assistant-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Assistant-SemiBold.ttf"; path = "../../../../../../Downloads/Assistant/static/Assistant-SemiBold.ttf"; sourceTree = "<group>"; };
+		F83214582DBE7EE100A339AD /* Assistant-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Assistant-Medium.ttf"; path = "../../../../../../Downloads/Assistant/static/Assistant-Medium.ttf"; sourceTree = "<group>"; };
 		F838C4BA2D8C3572004B68D6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F838C4BD2D8C3572004B68D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F838C4BF2D8C3572004B68D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F838C4C12D8C3572004B68D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F838C4C12D8C3572004B68D6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F838C4C42D8C3572004B68D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F838C4C72D8C3572004B68D6 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		F838C4C92D8C3577004B68D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,10 +60,6 @@
 		F838C5162DA6901B004B68D6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F838C5182DA6F90F004B68D6 /* Exstension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exstension+Color.swift"; sourceTree = "<group>"; };
 		F838C56C2DAD471D004B68D6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		F838C5782DAD4E70004B68D6 /* Assistant-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Assistant-Bold.ttf"; path = "../../../../../Downloads/ToDoList With SVG Icon/ToDoList/Resources/Font/Assistant-Bold.ttf"; sourceTree = "<group>"; };
-		F838C57A2DAD4E79004B68D6 /* Assistant-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Assistant-Medium.ttf"; path = "../../../../../Downloads/ToDoList With SVG Icon/ToDoList/Resources/Font/Assistant-Medium.ttf"; sourceTree = "<group>"; };
-		F838C57C2DAD4E81004B68D6 /* Assistant-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Assistant-Regular.ttf"; path = "../../../../../Downloads/ToDoList With SVG Icon/ToDoList/Resources/Font/Assistant-Regular.ttf"; sourceTree = "<group>"; };
-		F838C57E2DAD4E8B004B68D6 /* Assistant-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Assistant-SemiBold.ttf"; path = "../../../../../Downloads/ToDoList With SVG Icon/ToDoList/Resources/Font/Assistant-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 		F83214512DBE77FD00A339AD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F838C4C12D8C3572004B68D6 /* ViewController.swift */,
+				F838C4C12D8C3572004B68D6 /* HomeViewController.swift */,
 				F838C56C2DAD471D004B68D6 /* SettingsViewController.swift */,
 				F838C4D62D93220F004B68D6 /* NewTaskViewController.swift */,
 			);
@@ -161,10 +161,10 @@
 		F838C5052DA5CDF0004B68D6 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				F838C5782DAD4E70004B68D6 /* Assistant-Bold.ttf */,
-				F838C57C2DAD4E81004B68D6 /* Assistant-Regular.ttf */,
-				F838C57E2DAD4E8B004B68D6 /* Assistant-SemiBold.ttf */,
-				F838C57A2DAD4E79004B68D6 /* Assistant-Medium.ttf */,
+				F83214522DBE7E9300A339AD /* Assistant-Bold.ttf */,
+				F83214542DBE7EBC00A339AD /* Assistant-Regular.ttf */,
+				F83214562DBE7ECE00A339AD /* Assistant-SemiBold.ttf */,
+				F83214582DBE7EE100A339AD /* Assistant-Medium.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -227,14 +227,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F838C5792DAD4E70004B68D6 /* Assistant-Bold.ttf in Resources */,
+				F83214572DBE7ECE00A339AD /* Assistant-SemiBold.ttf in Resources */,
 				F838C5172DA6901B004B68D6 /* Colors.xcassets in Resources */,
-				F838C57D2DAD4E81004B68D6 /* Assistant-Regular.ttf in Resources */,
 				F838C4CD2D8C3577004B68D6 /* LaunchScreen.storyboard in Resources */,
-				F838C57F2DAD4E8B004B68D6 /* Assistant-SemiBold.ttf in Resources */,
-				F838C57B2DAD4E79004B68D6 /* Assistant-Medium.ttf in Resources */,
+				F83214532DBE7E9300A339AD /* Assistant-Bold.ttf in Resources */,
 				F838C4CA2D8C3577004B68D6 /* Assets.xcassets in Resources */,
 				F838C4D92D933DC1004B68D6 /* NewTaskModalView.xib in Resources */,
+				F83214552DBE7EBC00A339AD /* Assistant-Regular.ttf in Resources */,
+				F83214592DBE7EE100A339AD /* Assistant-Medium.ttf in Resources */,
 				F838C4C52D8C3572004B68D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,7 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F838C4C22D8C3572004B68D6 /* ViewController.swift in Sources */,
+				F838C4C22D8C3572004B68D6 /* HomeViewController.swift in Sources */,
 				F832144A2DBA77F900A339AD /* ShadowButton.swift in Sources */,
 				F838C4DD2D9EBE06004B68D6 /* CatagoryModel.swift in Sources */,
 				F838C5192DA6F90F004B68D6 /* Exstension+Color.swift in Sources */,
