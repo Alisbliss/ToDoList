@@ -7,23 +7,32 @@
 
 import UIKit
 
+/// The first screen you see when the app lounches. This is when you see all tasks. And this is the starting point for adding or editing a task. Tasks can only be delated from here.
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var tableView: UITableView!
     var tasks: [Task] = []
     
+    // We create the button programmatically because we cannot add the batton as a subview of a table view in the interface builder.
     lazy var addButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = UIColor.link
         button.tintColor = UIColor.white
         button.setImage(UIImage(systemName: "plus"), for: .normal)
+        
+        // We change the scale of the image view to make the size of the plus image bigger.
         button.imageView?.layer.transform = CATransform3DMakeScale(1.4, 1.4, 1.4)
         button.addTarget(self, action: #selector(addButtonTapped), for: .touchUpInside)
         return button
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+        setupNotifications()
+    }
+    
+    private func setupView() {
         titleView.clipsToBounds = true
         titleView.layer.cornerRadius = 24
         titleView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
@@ -34,10 +43,17 @@ class HomeViewController: UIViewController {
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableView.automaticDimension
         view.addSubview(addButton)
+    }
+    
+    /// We setup observars to watch the notifications when a new task is created and when the task is edited.
+    private func setupNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(createTask(_:)), name: NSNotification.Name("com.fullstacktuts.createTask"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(editTask(_:)), name: NSNotification.Name("com.fullstacktuts.editTask"), object: nil)
     }
-    
+    /* This responds to a task that has been edited from the NewTaskViewController. The notification object holds a userInfo object with the task that needs to be apdated
+     - Parameters:
+         - notification. Notification object from the 'com.fullstacktuts.editTask" notofication.
+     */
     @objc func editTask(_ notification: Notification) {
         guard let userInfo = notification.userInfo,
               let updatedTask = userInfo["updateTask"] as? Task else {
@@ -53,7 +69,10 @@ class HomeViewController: UIViewController {
         tableView.reloadData()
     }
     
-    @objc func createTask(_ notification: Notification) {
+    /* This responds to a task that has been created from the NewTaskViewController. The notification object holds a userInfo object with the task that needs to be created
+     - Parameters:
+         - notification. Notification object from the "com.fullstacktuts.createTask" notofication.
+     */    @objc func createTask(_ notification: Notification) {
         guard let userInfo = notification.userInfo,
               let task = userInfo["newTask"] as? Task else {
             return
@@ -85,6 +104,7 @@ class HomeViewController: UIViewController {
 
 }
 
+//MARK: Methods conforming to UITableViewDataSource
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
@@ -110,6 +130,8 @@ extension HomeViewController: UITableViewDelegate {
 //        let newTaskViewController = NewTaskViewController(task: task)
 //        present(newTaskViewController, animated: true)    }
 }
+
+//MARK: Methods conforming to TaskTableViewCellDelegate
 extension HomeViewController: TaskTableViewCellDelegate {
     func editTask(id: String) {
         let task = tasks.first

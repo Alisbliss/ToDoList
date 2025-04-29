@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// This allows the user to change settings. The only setting available is the ability to change interface style to light, dark, system preference.
 class SettingsViewController: UIViewController {
     
     
@@ -17,7 +18,11 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupView()
+    }
+    
+    private func setupView() {
+        // We changed the segmented control's index to the  current interface style
         let window = UIApplication.shared.connectedScenes.flatMap({($0 as? UIWindowScene)?.windows ?? []}).first { $0.isKeyWindow }
         if let window = window {
             switch window.overrideUserInterfaceStyle {
@@ -44,6 +49,16 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+        
+        /*
+         the hierarchy for views as follows:
+         -uiapplication
+         -windowscences
+         -windows
+         -keyWindow
+         -OverrideUserInterfaceStyle
+         We obtain the window to change the interface style below
+         */
         let window = UIApplication.shared.connectedScenes.flatMap({($0 as? UIWindowScene)?.windows ?? []}).first { $0.isKeyWindow }
         if sender.selectedSegmentIndex == 0 {
             window?.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
