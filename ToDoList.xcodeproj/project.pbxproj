@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F800D7E12DC157D300C99DDA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F800D7E02DC157D300C99DDA /* Realm */; };
+		F800D7E32DC157D300C99DDA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F800D7E22DC157D300C99DDA /* RealmSwift */; };
 		F83214462DBA6C9A00A339AD /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83214452DBA6C9A00A339AD /* RoundedButton.swift */; };
 		F83214482DBA772600A339AD /* PilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83214472DBA772600A339AD /* PilledButton.swift */; };
 		F832144A2DBA77F900A339AD /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83214492DBA77F900A339AD /* ShadowButton.swift */; };
@@ -67,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F800D7E32DC157D300C99DDA /* RealmSwift in Frameworks */,
+				F800D7E12DC157D300C99DDA /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +189,10 @@
 			dependencies = (
 			);
 			name = ToDoList;
+			packageProductDependencies = (
+				F800D7E02DC157D300C99DDA /* Realm */,
+				F800D7E22DC157D300C99DDA /* RealmSwift */,
+			);
 			productName = ToDoList;
 			productReference = F838C4BA2D8C3572004B68D6 /* ToDoList.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +221,9 @@
 				Base,
 			);
 			mainGroup = F838C4B12D8C3572004B68D6;
+			packageReferences = (
+				F800D7DF2DC157D300C99DDA /* XCLocalSwiftPackageReference "../../../Downloads/realm-swift-10.38.0 2" */,
+			);
 			productRefGroup = F838C4BB2D8C3572004B68D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -481,6 +492,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F800D7DF2DC157D300C99DDA /* XCLocalSwiftPackageReference "../../../Downloads/realm-swift-10.38.0 2" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../Downloads/realm-swift-10.38.0 2";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F800D7E02DC157D300C99DDA /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Realm;
+		};
+		F800D7E22DC157D300C99DDA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F838C4C62D8C3572004B68D6 /* ToDoList.xcdatamodeld */ = {
