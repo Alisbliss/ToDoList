@@ -12,4 +12,4 @@ ToDoList App is released under the MIT licence. [See licence](https://github.com
 
 
 
-![ScreenShot](https://github.com/Alisbliss/ToDoList/blob/main/Simulator%20Screenshot%20-%20iPhone%2015%20-%202025-04-27%20at%2018.41.08.png)
+![ScreenShot](https://github.com/Alisbliss/ToDoList/blob/main/ToDoList.jpg)
