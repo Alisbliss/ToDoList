@@ -32,7 +32,6 @@ class SettingsViewController: UIViewController {
                 segmentedControl.selectedSegmentIndex = 1
             case .unspecified:
                 segmentedControl.selectedSegmentIndex = 2
-                
             @unknown default:
                 segmentedControl.selectedSegmentIndex = 2
             }
@@ -62,10 +61,13 @@ class SettingsViewController: UIViewController {
         let window = UIApplication.shared.connectedScenes.flatMap({($0 as? UIWindowScene)?.windows ?? []}).first { $0.isKeyWindow }
         if sender.selectedSegmentIndex == 0 {
             window?.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
+            UserDefaults.standard.setValue(0, forKey: "interfacePreference")
         } else if sender.selectedSegmentIndex == 1 {
             window?.overrideUserInterfaceStyle = UIUserInterfaceStyle.dark
+            UserDefaults.standard.setValue(1, forKey: "interfacePreference")
         } else {
             window?.overrideUserInterfaceStyle = .unspecified
+            UserDefaults.standard.setValue(2, forKey: "interfacePreference")
         }
     }
     

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import os
 
 /// The first screen you see when the app lounches. This is when you see all tasks. And this is the starting point for adding or editing a task. Tasks can only be delated from here.
 class HomeViewController: UIViewController {
@@ -98,6 +99,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func settingsButtonTapped(_ sender: Any) {
+        os_log("Everything is working fine", type: .info)
         performSegue(withIdentifier: "SettingsSegue", sender: nil)
     }
     
